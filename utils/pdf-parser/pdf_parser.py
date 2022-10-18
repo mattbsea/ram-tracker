@@ -102,9 +102,7 @@ def main() -> int:
 
         for k in c.keys():
             desc = c[k].encode("ascii", "ignore").decode()
-            if k in codes and desc.lower() not in codes[k].lower():
-                codes[k] = ", ".join([codes[k], desc])
-            else:
+            if k not in codes:
                 codes[k] = desc
 
         # codes.update(get_codes(file))
