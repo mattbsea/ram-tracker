@@ -6,15 +6,15 @@ import { loader as orderLoader, OrderStatusView } from './views/OrderStatus';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "*",
     element: <Home />
   },
   {
     path:":name/:von",
     loader: orderLoader,
-    element: <OrderStatusView />
+    element: <OrderStatusView />,
   }
-]);
+], {basename: process.env.PUBLIC_URL});
 
 
 function App() {
