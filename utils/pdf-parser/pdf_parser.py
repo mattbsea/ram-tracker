@@ -38,7 +38,15 @@ def main() -> int:
 
     codes = {}
     for file in args.file:
-        codes.update(get_codes(file))
+        c = get_codes(file)
+        for k in c.keys():
+            desc = c[k].encode("ascii", "ignore").decode()
+            if k in codes and desc not in codes[k]:
+                codes[k] = ", ".join([codes[k], desc])
+            else:
+                codes[k] = desc
+
+        # codes.update(get_codes(file))
 
     print(json.dumps(codes, sort_keys=True, indent=2))
 
