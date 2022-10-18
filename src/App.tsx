@@ -6,7 +6,7 @@ import { loader as orderLoader, OrderStatusView } from './views/OrderStatus';
 
 const router = createBrowserRouter([
   {
-    path: "*",
+    path: "",
     element: <Home />
   },
   {
