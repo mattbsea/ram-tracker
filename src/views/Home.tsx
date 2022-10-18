@@ -5,6 +5,7 @@ import { Box, Button, Container, FormControl, Input, InputAdornment, InputLabel,
 import { Stack } from '@mui/system';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import RamImage from '../assets/RAM.png';
 
 export const Home = () => {
     const [name, setName] = useState('');
@@ -19,6 +20,7 @@ export const Home = () => {
       <Container sx={{ width: "600px", marginTop: "200px" }}>
         <Paper>
           <Stack spacing="10">
+            <img src={RamImage} alt="RAM"/>
             <Typography variant="h4">RAM Order Tracker (unofficial)</Typography>
             <Box sx={{ "& > :not(style)": { m: 1 } }}>
               <FormControl variant="standard">
@@ -56,7 +58,9 @@ export const Home = () => {
               </Button>
             </Box>
             <br/>
-            <Typography variant="body2">No data will be stored on the server.  The order lookup occurs within your browser.  No information is sent to this server.</Typography>
+            <Typography variant="body2">No data will be stored on the server.
+            The order lookup occurs within your browser.  Your name and order number will be sent to ramtrucks.com to look up your order data.
+            No information is sent to this server.</Typography>
           </Stack>
         </Paper>
       </Container>
