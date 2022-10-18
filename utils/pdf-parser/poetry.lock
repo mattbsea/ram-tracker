@@ -253,6 +253,21 @@ python-versions = "*"
 tests = ["pytest"]
 
 [[package]]
+name = "pydantic"
+version = "1.10.2"
+description = "Data validation and settings management using python type hints"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+typing-extensions = ">=4.1.0"
+
+[package.extras]
+dotenv = ["python-dotenv (>=0.10.4)"]
+email = ["email-validator (>=1.0.3)"]
+
+[[package]]
 name = "pydocstyle"
 version = "6.1.1"
 description = "Python docstring style checker"
@@ -388,7 +403,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "ed705f479acfa09811781f5dc0cac42cba030d19298bac9ce0175e1262985b64"
+content-hash = "0fbecc09a604d9cf9c28532152e550b97a6784586be51aff714b176aa09d6887"
 
 [metadata.files]
 appnope = []
@@ -412,6 +427,7 @@ pickleshare = []
 prompt-toolkit = []
 ptyprocess = []
 pure-eval = []
+pydantic = []
 pydocstyle = []
 pygments = []
 pypdf2 = []
