@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "pdf-parser"
+version = "0.1.0"
+description = ""
+authors = ["Matt Barclay <mbarclay@pm.me>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+PyPDF2 = "^2.11.1"
+
+[tool.poetry.dev-dependencies]
+ipython = "^8.5.0"
+bandit = "^1.7.4"
+mypy = "^0.982"
+pydocstyle = "^6.1.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
