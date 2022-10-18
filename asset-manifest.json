@@ -1,15 +1,16 @@
 {
   "files": {
     "main.css": "/ram-tracker/static/css/main.9071bff3.css",
-    "main.js": "/ram-tracker/static/js/main.9093d971.js",
+    "main.js": "/ram-tracker/static/js/main.4ab9c66f.js",
     "static/js/787.b277de95.chunk.js": "/ram-tracker/static/js/787.b277de95.chunk.js",
+    "static/media/RAM.png": "/ram-tracker/static/media/RAM.ef221675a3abdb726073.png",
     "index.html": "/ram-tracker/index.html",
     "main.9071bff3.css.map": "/ram-tracker/static/css/main.9071bff3.css.map",
-    "main.9093d971.js.map": "/ram-tracker/static/js/main.9093d971.js.map",
+    "main.4ab9c66f.js.map": "/ram-tracker/static/js/main.4ab9c66f.js.map",
     "787.b277de95.chunk.js.map": "/ram-tracker/static/js/787.b277de95.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9071bff3.css",
-    "static/js/main.9093d971.js"
+    "static/js/main.4ab9c66f.js"
   ]
 }
